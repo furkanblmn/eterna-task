@@ -46,8 +46,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        $this->data['page_title'] = 'Add New Category';
-        return view('admin.categories.create', $this->data);
+        return redirect()->route('dashboard.categories.index');
     }
 
 
@@ -64,10 +63,7 @@ class CategoryController extends Controller
      */
     public function edit(Category $category)
     {
-        
-        $this->data['data'] = $category;
-        $this->data['page_title'] = 'Update Category';
-        return view('admin.categories.edit', $this->data);
+        return redirect()->route('dashboard.categories.index');
     }
 
     /**

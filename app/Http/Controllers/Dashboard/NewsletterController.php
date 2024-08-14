@@ -43,6 +43,7 @@ class NewsletterController extends Controller
     public function create()
     {
         //
+        return redirect()->route('dashboard.newsletters.index');
     }
 
     /**
@@ -67,6 +68,7 @@ class NewsletterController extends Controller
     public function edit(string $id)
     {
         //
+        return redirect()->route('dashboard.newsletters.index');
     }
 
     /**

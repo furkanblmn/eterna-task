@@ -12,7 +12,7 @@ class DeleteRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        $blog = Blog::find($this->route('blog')->id);
+        $blog = Blog::find(request()->blog);
 
         return $blog && $this->user()->can('delete', $blog);
     }

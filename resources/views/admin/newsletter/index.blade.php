@@ -1,7 +1,7 @@
 @extends('admin.layouts.master')
 @section('menu', $menu_active)
 @section('title', $page_title)
-@section('add_new', true)
+@section('add_new', false)
 @section('content')
 
     <div class="row">
