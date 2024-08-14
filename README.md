@@ -20,25 +20,25 @@ To set up the project on your local machine, follow these steps:
 
 First, you need to install all the project dependencies using Composer. Run the following command in your terminal:
 
-\`\`\`bash
+```bash
 composer install
-\`\`\`
+```
 
 ### 2. Run Database Migrations and Seeding
 
 After installing the dependencies, you need to set up the database by running the migrations and seeders. This will create the necessary tables and populate them with sample data. Use the following command:
 
-\`\`\`bash
+```bash
 php artisan migrate:fresh --seed
-\`\`\`
+```
 
 ### 3. Start the Queue Worker (Testing Phase)
 
 During the testing phase, it's crucial to run the queue worker to process queued jobs. Execute the following command in your terminal:
 
-\`\`\`bash
+```bash
 php artisan queue:work
-\`\`\`
+```
 
 This command will start processing jobs from the queue.
 
